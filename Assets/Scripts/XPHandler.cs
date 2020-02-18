@@ -28,7 +28,7 @@ public class XPHandler : MonoBehaviour
     {
         if (data.outcome > 0)
         {
-            data.player.xp = 100 * (int)data.outcome;
+            data.player.xp += (int)(100.0f * data.outcome);
             GameEvents.PlayerXPGain(data.player.xp);
         }
  
