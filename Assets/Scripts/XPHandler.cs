@@ -22,6 +22,7 @@ public class XPHandler : MonoBehaviour
 
     private void OnDisable()
     {
+        GameEvents.OnBattleConclude -= GainXP;
     }
 
     public void GainXP(BattleResultEventData data)
